@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Title -->
+    <title>RiceUp &amp; Deteksi Penyakit Daun Padi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='img/core-img/favicon.ico') }}">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img">
+            <img src="{{ url_for('static', filename='img/core-img/leaf.png') }}" alt="">
+        </div>
+    </div>
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- ***** Navbar Area ***** -->
+        <div class="alazea-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alazeaNav">
+                        <!-- Nav Brand -->
+                        <a href="/" class="nav-brand"><img src="{{ url_for('static', filename='img/bg-img/logo.png') }}" alt=""></a>
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Navbar Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="#cara">Cara Penggunaan</a></li>
+                                    <li><a href="#deteksi">Deteksi</a></li>
+                                    <li><a href="#contact">Kontak</a></li>
+                                </ul>
+                            </div>
+                            <!-- Navbar End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Hero Area Start -->
+    <section class="hero-area">
+        <div class="hero-post-slides owl-carousel">
+            <!-- Single Hero Post -->
+            <div class="single-hero-post bg-overlay">
+                <!-- Post Image -->
+                <div class="slide-img bg-img" style="background-image: url('{{ url_for('static', filename='img/bg-img/2.jpg') }}');"></div>
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <!-- Post Content -->
+                            <div class="hero-slides-content text-center">
+                                <h2>Selamat Datang di RiceUp</h2>
+                                <p>Pantau kesehatan tanaman padi Anda secara cepat dan akurat. Unggah gambar daun padi atau ambil langsung dari kamera, dan sistem kami akan menganalisisnya untuk mendeteksi kemungkinan penyakit.</p>
+                                <div class="welcome-btn-group">
+                                    <a href="#cara" class="btn alazea-btn mr-30">Mulai</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Area End -->
+
+    <!-- Service Area Start -->
+    <section id="cara" class="our-services-area bg-gray section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2>CARA PENGGUNAAN</h2>
+                        <p>Cara menggunakan website RiceUp</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-5">
+                    <div class="alazea-service-area mb-100">
+
+                        <!-- Single Service Area -->
+                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="100ms">
+                            <!-- Icon -->
+                            <div class="service-icon mr-30">
+                                <img src="{{ url_for('static', filename='img/core-img/s1.png') }}" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="service-content">
+                                <h5>Upload Gambar</h5>
+                                <ol>
+                                    <li>1. Klik tab "Upload Gambar" 2. Pilih foto daun padi (JPG/PNG)</li>
+                                    <li>3. Klik "Analisis Gambar" 4. Lihat hasil deteksi</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Single Service Area -->
+                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Icon -->
+                            <div class="service-icon mr-30">
+                                <img src="{{ url_for('static', filename='img/core-img/s2.png') }}" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="service-content">
+                                <h5>Ambil Foto</h5>
+                                <ol>
+                                    <li>1. Klik tab "Kamera" 2. Tekan "Mulai Kamera"</li>
+                                    <li>3. Arahkan ke daun padi 4. Tekan "Ambil Foto"</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Single Service Area -->
+                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="500ms">
+                            <!-- Icon -->
+                            <div class="service-icon mr-30">
+                                <img src="{{ url_for('static', filename='img/core-img/s3.png') }}" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="service-content">
+                                <h5>Tips Foto Terbaik</h5>
+                                <ol>
+                                    <li>1. Pencahayaan yang cukup 2. Fokus pada area yang sakit</li>
+                                    <li>3. Jarak 15-30 cm dari daun 4. Hindari bayangan</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="alazea-video-area bg-overlay mb-100">
+                        <img src="{{ url_for('static', filename='img/bg-img/23.jpg') }}" alt="">
+                        <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="video-icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Area End -->
+
+    <!-- Portfolio Area Start -->
+    <section id="deteksi" class="alazea-portfolio-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2>Sistem Deteksi</h2>
+                        <p>Sistem Deteksi Penyakit Daun Padi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <!-- Tombol Pilih Mode -->
+            <div class="col-12">
+                <div class="alazea-portfolio-filter">
+                    <div class="portfolio-filter">
+                        <button class="btn active" onclick="showTab('upload')"><i>📁</i> Upload Gambar</button>
+                        <button class="btn" onclick="showTab('camera')"><i>📷</i> Ambil Foto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Upload -->
+            <div id="tab-upload" class="tab-content">
+                <form method="POST" action="/" enctype="multipart/form-data" id="upload-form">
+                    <label class="upload-area" for="fileInput">
+                        <div class="upload-icon">📤</div>
+                        <div>Upload Gambar Daun Padi</div>
+                        <div>Format: JPG, PNG (Max 5MB)</div>
+                    </label>
+                    <input type="file" id="fileInput" name="image" accept="image/*" required hidden onchange="previewUpload(event)">
+                </form>
+            </div>
+
+            <!-- Tab Kamera -->
+            <div id="tab-camera" class="tab-content" style="display: none;">
+                <div class="text-center">
+                    <video id="video" autoplay playsinline style="max-width:100%; border-radius:8px;"></video>
+                    <div class="camera-controls mt-3">
+                        <button class="btn btn-primary" onclick="startCamera()">📹 Mulai Kamera</button>
+                        <button class="btn btn-secondary" onclick="capturePhoto()">📸 Ambil Foto</button>
+                        <button class="btn btn-danger" onclick="stopCamera()">⏹️ Stop Kamera</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preview & Hasil (Gabungan) -->
+            <div id="preview-section" class="text-center mt-4" style="display:none;">
+                <h5>Pratinjau Gambar</h5>
+                <img id="preview" src="" alt="Preview" style="max-width:100%; border-radius:8px;">
+            </div>
+
+            <!-- Hasil deteksi -->
+            <div id="results-section" class="text-center mt-4"></div>
+
+        </div>
+
+
+        <!-- Canvas untuk tangkap gambar -->
+        <canvas id="canvas" style="display:none;"></canvas>
+
+    </section>
+    <!-- Portfolio Area End -->
+
+    <!-- Contact Area Start -->
+    <section id="kontak" class="contact-area section-padding-100-0">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-5">
+                    <!-- Section Heading -->
+                    <div class="section-heading">
+                        <h2>GET IN TOUCH</h2>
+                        <p>Hubungi kami disini</p>
+                    </div>
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area mb-100">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="contact-name" placeholder="Nama">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="contact-email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="contact-subject" placeholder="Subjek">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Pesan"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn alazea-btn mt-15">Kirim Pesan</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <!-- Google Maps -->
+                    <div class="map-area mb-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.2256287475625!2d110.40648567363148!3d-6.982679393018209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4ec52229d7%3A0xc791d6abc9236c7!2sUniversitas%20Dian%20Nuswantoro!5e0!3m2!1sid!2sid!4v1751272004659!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Area End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area bg-img" style="background-image: url(img/bg-img/3.jpg);">
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="border-line"></div>
+                    </div>
+                    <!-- Copywrite Text -->
+                    <div class="col-12 col-md-6">
+                        <div class="copywrite-text">
+                            <p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> This RiceUp Website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Nila, Restu, Safa, Dira, Valen
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Footer Nav -->
+                    <div class="col-12 col-md-6">
+                        <div class="footer-nav">
+                            <nav>
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="#cara">Cara Penggunaan</a></li>
+                                    <li><a href="#deteksi">Deteksi</a></li>
+                                    <li><a href="#kontak">Kontak</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <script>
+        function showTab(tab) {
+            // Sembunyikan semua tab
+            document.getElementById('tab-upload').style.display = 'none';
+            document.getElementById('tab-camera').style.display = 'none';
+
+            // Hilangkan class 'active' dari semua tombol
+            const buttons = document.querySelectorAll('.portfolio-filter .btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Tampilkan tab sesuai pilihan
+            if (tab === 'upload') {
+                document.getElementById('tab-upload').style.display = 'block';
+                buttons[0].classList.add('active');
+            } else if (tab === 'camera') {
+                document.getElementById('tab-camera').style.display = 'block';
+                buttons[1].classList.add('active');
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const resultText = document.getElementById("result-text");
+            const prediction = resultText.dataset.prediction;
+
+            if (prediction) {
+                resultText.innerHTML = `<strong style="font-size: 1.3rem; color: green;">${prediction}</strong>`;
+                document.getElementById("results-section").classList.remove("hidden");
+            }
+        });
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (file && file.type.startsWith('image/')) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const previewImg = document.getElementById('preview-image');
+                    previewImg.src = e.target.result;
+                    previewImg.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+
+    <!-- All Javascript Files -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{{ url_for('static', filename='js/jquery/jquery-2.2.4.min.js') }}"></script>
+    <!-- Popper js -->
+    <script src="{{ url_for('static', filename='js/bootstrap/popper.min.js') }}"></script>
+    <!-- Bootstrap js -->
+    <script src="{{ url_for('static', filename='js/bootstrap/bootstrap.min.js') }}"></script>
+    <!-- All Plugins js -->
+    <script src="{{ url_for('static', filename='js/plugins/plugins.js') }}"></script>
+    <!-- Active js -->
+    <script src="{{ url_for('static', filename='js/active.js') }}"></script>
+</body>
+
+</html>
